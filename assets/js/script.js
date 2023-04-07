@@ -3,7 +3,7 @@
 // in the html.
 
 let currentTime = $("#currentDay");
-let todaysTime = dayjs().hour(13);
+let todaysTime = dayjs().hour();
 
 $(document).ready(function () {
   currentTime.text("Todays Date and Time Here");
@@ -49,63 +49,81 @@ $(document).ready(function () {
     hourFour = dayjs().hour(16);
     hourFive = dayjs().hour(17);
     console.log(hourNine);
-//9
-    if(hourNine.isAfter(todaysTime, 'hour')){
-      console.log('its working')
-      $('#hour-9').addClass('future')
-    }else if (hourNine.isSame(todaysTime, 'hour')){
-      $('#hour-9').addClass('present');
-    }else{ $('#hour-9').addClass('past')};
-//10
-    if(hourTen.isAfter(todaysTime, 'hour')){
-      $('#hour-10').addClass('future')
-      }else if (hourTen.isSame(todaysTime, 'hour')){
-      $('#hour-10').addClass('present');
-    }else{ $('#hour-10').addClass('past')};
-  //11
-  if(hourEleven.isAfter(todaysTime, 'hour')){
-    $('#hour-11').addClass('future')
-    }else if (hourEleven.isSame(todaysTime, 'hour')){
-    $('#hour-11').addClass('present');
-  }else{ $('#hour-11').addClass('past')};
-  //12
-  if(hourTwelve.isAfter(todaysTime, 'hour')){
-    $('#hour-12').addClass('future')
-    }else if (hourTwelve.isSame(todaysTime, 'hour')){
-    $('#hour-12').addClass('present');
-  }else{ $('#hour-12').addClass('past')};
-  //1
-  if(hourOne.isAfter(todaysTime, 'hour')){
-    $('#hour-1').addClass('future')
-    }else if (hourOne.isSame(todaysTime,'hour')){
-    $('#hour-1').addClass('present');
-  }else{ $('#hour-1').addClass('past')};
-  //2
-  if(hourTwo.isAfter(todaysTime, 'hour')){
-    $('#hour-2').addClass('future')
-    }else if (hourTwo.isSame(todaysTime,'hour')){
-    $('#hour-2').addClass('present');
-  }else{ $('#hour-2').addClass('past')};
-  //3
-  if(hourThree.isAfter(todaysTime, 'hour')){
-    $('#hour-3').addClass('future')
-    }else if (hourThree.isSame(todaysTime,'hour')){
-    $('#hour-3').addClass('present');
-  }else{ $('#hour-3').addClass('past')};
-  //4
-  if(hourFour.isAfter(todaysTime, 'hour')){
-    $('#hour-4').addClass('future')
-    }else if (hourFour.isSame(todaysTime,'hour')){
-    $('#hour-4').addClass('present');
-  }else{ $('#hour-4').addClass('past')};
-  //5
-  if(hourFive.isAfter(todaysTime, 'hour')){
-    $('#hour-5').addClass('future')
-    }else if (hourFive.isSame(todaysTime,'hour')){
-    $('#hour-5').addClass('present');
-  }else{ $('#hour-5').addClass('past')}
+    //9
+    if (hourNine.isAfter(todaysTime, "hour")) {
+      console.log("its working");
+      $("#hour-9").addClass("future");
+    } else if (hourNine.isSame(todaysTime, "hour")) {
+      $("#hour-9").addClass("present");
+    } else {
+      $("#hour-9").addClass("past");
+    }
+    //10
+    if (hourTen.isAfter(todaysTime, "hour")) {
+      $("#hour-10").addClass("future");
+    } else if (hourTen.isSame(todaysTime, "hour")) {
+      $("#hour-10").addClass("present");
+    } else {
+      $("#hour-10").addClass("past");
+    }
+    //11
+    if (hourEleven.isAfter(todaysTime, "hour")) {
+      $("#hour-11").addClass("future");
+    } else if (hourEleven.isSame(todaysTime, "hour")) {
+      $("#hour-11").addClass("present");
+    } else {
+      $("#hour-11").addClass("past");
+    }
+    //12
+    if (hourTwelve.isAfter(todaysTime, "hour")) {
+      $("#hour-12").addClass("future");
+    } else if (hourTwelve.isSame(todaysTime, "hour")) {
+      $("#hour-12").addClass("present");
+    } else {
+      $("#hour-12").addClass("past");
+    }
+    //1
+    if (hourOne.isAfter(todaysTime, "hour")) {
+      $("#hour-1").addClass("future");
+    } else if (hourOne.isSame(todaysTime, "hour")) {
+      $("#hour-1").addClass("present");
+    } else {
+      $("#hour-1").addClass("past");
+    }
+    //2
+    if (hourTwo.isAfter(todaysTime, "hour")) {
+      $("#hour-2").addClass("future");
+    } else if (hourTwo.isSame(todaysTime, "hour")) {
+      $("#hour-2").addClass("present");
+    } else {
+      $("#hour-2").addClass("past");
+    }
+    //3
+    if (hourThree.isAfter(todaysTime, "hour")) {
+      $("#hour-3").addClass("future");
+    } else if (hourThree.isSame(todaysTime, "hour")) {
+      $("#hour-3").addClass("present");
+    } else {
+      $("#hour-3").addClass("past");
+    }
+    //4
+    if (hourFour.isAfter(todaysTime, "hour")) {
+      $("#hour-4").addClass("future");
+    } else if (hourFour.isSame(todaysTime, "hour")) {
+      $("#hour-4").addClass("present");
+    } else {
+      $("#hour-4").addClass("past");
+    }
+    //5
+    if (hourFive.isAfter(todaysTime, "hour")) {
+      $("#hour-5").addClass("future");
+    } else if (hourFive.isSame(todaysTime, "hour")) {
+      $("#hour-5").addClass("present");
+    } else {
+      $("#hour-5").addClass("past");
+    }
 
-  //long way to do it. Not sure how to otherwise.
+    //long way to do it. Not sure how to otherwise.
   }
   colors();
 });
