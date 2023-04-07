@@ -3,7 +3,7 @@
 // in the html.
 
 let currentTime = $("#currentDay");
-let todaysTime = dayjs().hour();
+let todaysTime = dayjs();
 
 $(document).ready(function () {
   currentTime.text("Todays Date and Time Here");
